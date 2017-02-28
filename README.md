@@ -1,7 +1,7 @@
 # Purple-Mystery
 IT484
 Ali Abbas Niitsu
-#yoooo purple 
+yoooo purple 
 
 
 This is Janoj
