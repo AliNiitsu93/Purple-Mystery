@@ -1,9 +1,16 @@
+
 <% @messages.each do |message| %>
+ <!--if user_signed_in?-->
 	<div class="col-md-4">
 		<div class="message">
 			<h2 class="message-title"><%= message.title %></h2>
 			<%= link_to "View Message", message, class: "btn-custom" %>
+	 <!--end-->
 		</div>
 	</div>
+	
+	
+	
 <% end %>
 
+<!--<center> < image_tag("study-sess.jpg", :alt => "study sess </center>-->

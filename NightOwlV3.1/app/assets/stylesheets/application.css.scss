@@ -19,9 +19,11 @@
 
 /* General styles */
 
+
 body {
-	background-color: #fff;
+	background-color: #add8e6;
 	font-family: 'Playfair Display', serif;
+	// background-image: url(study-sess.jpg);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,13 +58,16 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
 	font-family: 'Muli', sans-serif;
 	text-transform: uppercase;
+	
+
 }
 
 .navbar-default {
+	// background-image:image_tag("study-sess.jpg", :alt => "study sess") ;
 
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: #fff;
+	background-color: #fff ;
 
 	.navbar-nav > li > a {
 		color: #222;
@@ -146,7 +151,14 @@ h1, h2, h3, h4, h5, h6 {
 		color: #eee;
 		font-size: 0.9em;
 	}
-
+	
+		.message-location {
+		font-size: 1.1em;
+		line-height: 1.75;
+		margin-bottom: 10px;
+		
+	}
+		
 	.reply-to-msg {
 		margin-top: 50px;
 	}
