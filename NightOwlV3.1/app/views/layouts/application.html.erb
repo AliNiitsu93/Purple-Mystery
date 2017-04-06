@@ -12,6 +12,8 @@
 		<div class="container">
 			<div class="navbar-header">
 				<%= link_to "Night Owl", root_path, class: "navbar-brand" %>
+				
+				<%= link_to "About us", about_index_path, class: "navbar-brand"  %> 
 			</div>
 			<% if user_signed_in? %>
 				<p> <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "navbar-text navbar-link navbar-right" %>
@@ -23,9 +25,8 @@
 				
 			<% else %>
 					<p><%= link_to "Sign Up", new_user_registration_path, class: "navbar-text navbar-link navbar-right" %>
-
-					<%= link_to "Log In", new_user_session_path, class: "navbar-text navbar-link navbar-right" %></p>	
-				
+					
+					<%= link_to "Log In", new_user_session_path, class: "navbar-text navbar-link navbar-right" %></p>
 			<% end %>
 		</div>
 	</nav>
