@@ -44,11 +44,10 @@ class MessagesController < ApplicationController
 
 		def find_message
 			@message = Message.find(params[:id])
-			
-			# @message = Message.find params[:id]
-			# @message = Message.find_by(slug: params[:id])
-
 		end
+		
+	
+
 		
 
 end
