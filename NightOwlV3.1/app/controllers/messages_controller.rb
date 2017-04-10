@@ -3,6 +3,7 @@ class MessagesController < ApplicationController
 
 	def index
 		@messages = Message.all.order("created_at DESC")
+		@messages = Message.where(["title LIKE ?","%#{params[:search]}%"])
 	end
 
 	def show
