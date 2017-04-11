@@ -5,5 +5,4 @@ class Message < ActiveRecord::Base
 		"#{id} #{title}".parameterize
 	end
 	
-	
 end
