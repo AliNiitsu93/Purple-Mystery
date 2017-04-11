@@ -1,10 +1,10 @@
 <div class="col-md-8 col-md-offset-2">
 	<div class="message-show">
 		<h2><%= @message.title %></h2>
-		<p class="message-posted-by">Posted by <%= @message.user.email %> <%= time_ago_in_words(@message.created_at) %> ago</p>
+		<p class="message-posted-by">Posted by <%= time_ago_in_words(@message.created_at) %> ago</p>
 		<p class="message-location"> Location: <%= @message.location %> </p>
 		<p class="message-desc">Description: </br><%= @message.description %></p>
-		
+
 		<!-- Add a Posted By: username at timestamp. -->
 
 		<h3 class="comment-section-header">Messages:</h3>
@@ -14,6 +14,12 @@
 		<h3 class="reply-to-msg">Reply to Message:</h3>
 		<!-- renders the comments form -->
 		<%= render 'comments/form' %>
+<<<<<<<<< saved version
+
+=========
+		
+		
+>>>>>>>>> local version
 		<% else %>
 			<%="Please sign in to reply."%></br>
 			<%= link_to "Sign in", new_user_session_path %>

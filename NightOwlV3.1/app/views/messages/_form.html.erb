@@ -2,7 +2,15 @@
 	<%= f.input :title, label: "Group Title" %>
 	<%= f.input :location, label: "Location" %>
 	<%= f.input :description, label: "Description" %>
-	<%= f.submit "Create Group"%>
+	
+	
+	<% if request.path == new_message_path %>
+		<%= f.submit "Create Group"%>
+	<% else %>
+		<%= f.submit "Update Group"%>
+	<% end %>
+
+
 	
 <% end %>
 
