@@ -12,22 +12,25 @@
 		<div class="container">
 			<div class="navbar-header">
 				<%= link_to "Group List", root_path, class: "navbar-brand" %>
-				 
-			</div>
-			<% if user_signed_in? %>
-				<p> 
-				
 				<%= form_tag messages_path, :method => 'get' do %>
-					<%= text_field_tag :search, params[:search] %>
-					<%= submit_tag "Search" %>
+				<%= text_field_tag :search, params[:search] %>
+				<%= submit_tag "Search" %>
+			</div>
+			
+			<% if user_signed_in? %>
+				<% if current_user.admin? %>
+					<nav class='dashboard_root_link'><a class="pjax" href="/admin/">Admin Dashboard</a></nav>
 				<% end %>
+				<p>
 				<%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "navbar-text navbar-link navbar-right" %>
 				<%= link_to "Create New Group", new_message_path, class: "navbar-text navbar-link navbar-right" %>
-				<%= link_to current_user.email, edit_user_registration_path, class: "navbar-text navbar-link navbar-right" %></p>
-			<% else %>
+				<%= link_to current_user.email, edit_user_registration_path, class: "navbar-text navbar-link navbar-right" %>
+				</p>
+				<% else %>
 					<p><%= link_to "Sign Up", new_user_registration_path, class: "navbar-text navbar-link navbar-right" %>
 					<%= link_to "Log In", new_user_session_path, class: "navbar-text navbar-link navbar-right" %>
 					<%= link_to "About us", about_index_path, class: "navbar-text navbar-link navbar-right" %></p>
+				<% end %>
 			<% end %>
 		</div>
 	</nav>

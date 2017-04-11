@@ -21,6 +21,17 @@ module MessageBoard
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
+    # config.active_record.raise_in_transactional_callbacks = true
+    
+    
+  ActionMailer::Base.smtp_settings = {
+    :address => 'smtp.mail.gmail.com',
+    :domain => 'mail.google.com',
+    :port => 587,
+    :user_name => 'donotreply@gmail.com',
+    :password => 'rubyonrails',
+    :authentication => 'login',
+    :enable_starttls_auto => true
+    }
   end
 end
