@@ -2,7 +2,10 @@
 <% @messages.each do |message| %>
 	<div class="col-md-4">
 		<div class="message">
-			<h2 class="message-title"><%= message.title %></h2>
+			<h2 class="message-title">Group: <%= message.title %></h2>
+			<h2 class="message-locat">Location: <%= message.location %></h2>
+			<h2 class="message-tim">Created: <%= time_ago_in_words(message.created_at) %> ago</h2>
+
 			<%= link_to "View Message", message, class: "btn-custom" %></br>
 			 <!--message.location-->
 		</div>

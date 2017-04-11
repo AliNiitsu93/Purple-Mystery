@@ -113,14 +113,29 @@ h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		margin-top: 0;
 		color: white;
-		margin-bottom: 25px;
+		margin-bottom: 10px;
 	}
 
 	.btn-custom {
 		margin-top: 20px;
 	}
+	.message-locat {
+		font-size: 1.0em;
+		font-family: 'Muli', sans-serif;
+		font-weight: 300;
+		margin-top: 0;
+		color: white;
+		margin-bottom: 10px;
+	}
 
-	
+	.message-tim {
+		font-size: 0.8em;
+		font-family: 'Muli', sans-serif;
+		font-weight: 300;
+		margin-top: 0;
+		color: white;
+		margin-bottom: 15px;
+	}
 }
 
 .message:nth-child(4n) {
