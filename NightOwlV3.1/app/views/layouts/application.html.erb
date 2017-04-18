@@ -7,10 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 	<nav class="navbar navbar-default">
 		<div class="container">
 			<div class="navbar-header">
+				<%= image_tag("owl-logo-2.png", width: '80px', height: '65px', :alt =>"walk")%>
+
 				<strong><%= link_to "Group List", root_path, class: "navbar-brand" %></strong>
 				<%= form_tag messages_path, :method => 'get' do %>
 				<%= text_field_tag :search, params[:search] %>
