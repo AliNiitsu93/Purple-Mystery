@@ -15,7 +15,7 @@ Go to link: https://github.com/Akun93/Purple-Mystery
 
 -Then type "gem install rails". This should run for a few minutes. 
 
--After istalling type "cd Purple-Mystery/NightOwlV3.1"
+-After installing type "cd Purple-Mystery/NightOwlV3.1"
 
 -Then type "bundle install" to make sure all the gems required for this app is installed and in good shape to go.
 
