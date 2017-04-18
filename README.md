@@ -15,7 +15,7 @@ Go to link: https://github.com/Akun93/Purple-Mystery
 
 -Once you find your forked repository click on the "Clone to Edit" button next to the repository
 
--This shoudl open the Create New Workspace page. Give it an appropriate name and click on "Create Workspace"
+-This should open the Create New Workspace page. Give it an appropriate name and click on "Create Workspace"
 
 -Once inside the workspace, open up a termianl that is not already open yet. The terminal should list all the branches in the repository.
 
