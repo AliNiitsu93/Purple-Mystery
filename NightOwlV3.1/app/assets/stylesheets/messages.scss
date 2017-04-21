@@ -1,3 +1,41 @@
 // Place all the styles related to the Messages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/* Message show-page styles */
+
+.message-show {
+	box-sizing: border-box;
+	background-color: #383838;
+	padding: 2.0em 1.5em;
+	border-bottom: 4px solid #0a8fd5;
+	color: #fff;
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+
+	h2 {
+		margin-top: 0;
+	}
+
+	.message-desc {
+		font-size: 1.1em;
+		line-height: 1.75;
+		margin-bottom: 50px;
+	}
+
+	.message-posted-by {
+		color: #eee;
+		font-size: 0.9em;
+	}
+	
+		.message-location {
+		font-size: 1.1em;
+		line-height: 1.75;
+		margin-bottom: 10px;
+		
+	}
+		
+	.reply-to-msg {
+		margin-top: 50px;
+	}
+
+}
