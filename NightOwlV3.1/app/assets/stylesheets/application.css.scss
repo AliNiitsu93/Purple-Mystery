@@ -26,20 +26,27 @@ body {
 	
 	background-image: url(DP_marquee.jpg);
 	background-size: 100%;
-	background-position:0% 30px;
+	// background-position:0% 30px;
 	background-repeat: no-repeat;
 
 }
 
 .logInImg {
 	background-image: url(logo2.png);
+	background-position: 50% 150px;
+
+	background-size: 65%;
+	background-color: #ffffff;
+
+
 }
 
 .aboutImg {
-	background-image: url(study-sess.jpg);
-	background-size: 100%;
-	background-position:0% 30px;
-	background-repeat: no-repeat;
+	background-image: url(logo2.png);
+	background-position: 100% 150px;
+
+	background-size: 50%;
+	background-color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
