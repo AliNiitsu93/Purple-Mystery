@@ -1,3 +1,4 @@
+<body class = "logInImg">
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
@@ -25,3 +26,4 @@
 <p>Done with Night Owl? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you 100% sure?" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
+</body>
