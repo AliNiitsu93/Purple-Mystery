@@ -39,3 +39,51 @@
 	}
 
 }
+
+/* Message styles */
+
+.message {
+	box-sizing: border-box;
+	background-color: #383838;
+	margin-bottom: 25px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 1.4em 1.4em;
+	height: 150px;
+	border-bottom: #383838;
+
+	.message-title {
+		font-size: 1.5em;
+		font-family: 'Muli', sans-serif;
+		font-weight: 300;
+		margin-top: 0;
+		color: white;
+		margin-bottom: 10px;
+	}
+
+	.btn-custom {
+		margin-top: 20px;
+	}
+	.message-locat {
+		font-size: 1.0em;
+		font-family: 'Muli', sans-serif;
+		font-weight: 300;
+		margin-top: 0;
+		color: white;
+		margin-bottom: 10px;
+	}
+
+	.message-tim {
+		font-size: 0.8em;
+		font-family: 'Muli', sans-serif;
+		font-weight: 300;
+		margin-top: 0;
+		color: white;
+		margin-bottom: 15px;
+	}
+}
+
+.message:nth-child(4n) {
+	clear: left;
+}
+
